@@ -35,7 +35,7 @@
 
 @media screen and (max-width: 768px) {
   .navbar__bars {
-    color: #2500ff;
+    color: #ff00e1;
     opacity: 1;
     position: absolute;
     top: 22px;
@@ -97,6 +97,7 @@
 
 .hero {
   background-color: #ff1f93;
+  height: 100%;
 }
 
 .hero__container {
@@ -109,7 +110,7 @@
           align-items: center;
   justify-items: center;
   margin: 0 auto;
-  height: 90vh;
+  height: 100%;
   z-index: 1;
   width: 100%;
   height: 100%;
@@ -123,6 +124,16 @@
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .hero__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -155,7 +166,7 @@
 }
 
 .hero__container--left h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   color: #eeeeee;
 }
 
@@ -166,7 +177,7 @@
 }
 
 .hero__container--left p {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #eeeeee;
   margin-top: 1rem;
@@ -180,7 +191,8 @@
 
 .hero__container--btn {
   font-size: 1rem;
-  background-color: #eeeeee;
+  text-decoration: none;
+  background: #024d87;
   padding: 14px 32px;
   color: #ff00e1;
   border: none;
@@ -188,9 +200,13 @@
   margin-top: 2rem;
   cursor: pointer;
   position: relative;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   outline: none;
+}
+
+.hero__container--btn:hover {
+  color: #8000ff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 280px) {
@@ -199,13 +215,7 @@
   }
 }
 
-.hero__container--right {
+.hero__container--right img {
   width: 100%;
-}
-
-@media screen and (max-width: 280px) {
-  .hero__container {
-    width: 100%;
-  }
 }
 /*# sourceMappingURL=styles.css.map */

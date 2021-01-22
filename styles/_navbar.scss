@@ -27,7 +27,7 @@
   &__bars {
     opacity: 0;
     @include tablet {
-      color: $dark;
+      color: $light;
       opacity: 1;
       position: absolute;
       top: 22px;
